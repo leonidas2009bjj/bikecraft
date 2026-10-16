@@ -1,0 +1,337 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header img {
+  margin-left: 40px;
+}
+.menu {
+  padding: 10px;
+  display: flex;
+  font-size: 1.3rem;
+  gap: 20px;
+  height: 40px;
+  padding: 20px;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.menu a {
+  position: relative;
+  text-decoration: none;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+}
+@media (max-width: 600px) {
+  header {
+    justify-content: center;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.bikes {
+  background: #121212;
+  color: white;
+  display: grid;
+  align-items: center;
+  padding-left: 40px;
+  height: 150px;
+}
+.bikes h4 {
+  padding-top: 10px;
+}
+.bikes h1 {
+  padding: 0px;
+}
+
+.subtitulo {
+  font-family: "Roboto", sans-serif;
+  color: #727272;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+.titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+.subtitulos {
+  font-family: "Roboto", sans-serif;
+  color: #727272;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  max-width: 60ch;
+}
+.ponto {
+  color: rgb(251, 255, 0);
+}
+.bikecraft,
+.bikecraft-2 {
+  display: grid;
+  position: relative;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* background: #494949; */
+  /* align-items: center; */
+  /* background: #caf; */
+  /* margin-top: 40px; */
+  margin: 40px 50px;
+}
+
+.bikecraft h3 {
+  height: 300px;
+  background-image:
+    linear-gradient(#000, #000), url("../imagens/bicicleta1 (2).jpg");
+  background-repeat: no-repeat;
+  background-size:
+    80px 50px,
+    cover;
+  padding-top: 40px;
+  background-position:
+    right 25px,
+    center top;
+  display: flex;
+  justify-content: end;
+  border-radius: 5px;
+  color: #fff;
+  padding-right: 10px;
+}
+
+.preco {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  background: #000;
+}
+.bikecraft h2,
+.bikecraft-2 h3 {
+  position: relative;
+  /* margin-bottom: 30px; */
+  margin-top: 10px;
+}
+.bikecraft h2::before,
+.bikecraft-2 h3::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  top: -10px;
+  background: #fffb00;
+}
+.bikecraft p,
+.bikecraft-2 p {
+  color: #494949;
+  font-weight: 500;
+}
+@media (max-width: 800px) {
+  .bikecraft h2::before {
+    top: -10px;
+    width: 20px;
+    height: 10px;
+  }
+}
+.precoo {
+  padding-top: 20px;
+  font-size: 1.3rem;
+  background: #000;
+  z-index: 0;
+  position: absolute;
+  left: 60px;
+  top: 10px;
+}
+
+@media (max-width: 900px) {
+  .bikecraft,
+  .bikecraft-2 {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .bikecraft h3,
+  .bikecraft-2 h3 {
+    /* width: 100%; */
+    height: 200px;
+    object-fit: cover;
+    margin: 30px;
+    margin-bottom: 0px;
+  }
+  .bikecraft h2.bikecraft-2 h2 {
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 30px;
+  }
+  .infoo {
+    padding: 10px;
+  }
+  .subtitulos {
+    font-size: 1rem;
+    text-align: start;
+    margin-left: 30px;
+  }
+  .precoo {
+    padding-top: 20px;
+    font-size: 1.3rem;
+    background: #000;
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+  }
+}
+.flex {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+}
+.papai {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+.btn {
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(#ffbb00, #ffbb00);
+  font-weight: 500;
+  padding: 10px 20px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: linear-gradient(#d89e00, #ffbb00);
+}
+.leoo {
+  background: #000;
+}
+.infoo {
+  background: #121212;
+  padding: 30px;
+  padding-left: 100px;
+  color: #fff;
+  padding-bottom: 80px;
+}
+.bikecraft-2 p {
+  color: white;
+}
+.bikecraft-2 {
+  /* margin: 0px; */
+  gap: 0px;
+}
+
+.bikecraft-2 h3 {
+  height: 300px;
+  background-image:
+    linear-gradient(#000, #000), url("../imagens/bicicleta2\ \(2\).jpg");
+  background-repeat: no-repeat;
+  background-size:
+    80px 50px,
+    cover;
+  padding-top: 40px;
+  background-position:
+    right 25px,
+    center top;
+  display: flex;
+  justify-content: end;
+  border-radius: 5px;
+  color: #fff;
+  /* padding-right: 10px; */
+}
+.footer {
+  background: #000;
+  color: white;
+  margin: 0px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.footer h6 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.footer p,
+h3 {
+  color: #838080;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: center; */
+  /* background: #9900ff; */
+}
+
+.flex1 img:hover {
+  background: #3a0061;
+  padding: 3px;
+  border-radius: 10px;
+}
+.hr {
+  border: 2px solid rgb(75, 5, 180);
+}
+@media (max-width: 800px) {
+  .hr {
+    display: none;
+  }
+  .flex1 {
+    justify-content: start;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer img {
+    grid-column: 1/-1;
+    /* background-color: #3a0061; */
+  }
+}
+.inform a {
+  display: block;
+  color: #838080;
+  text-decoration: none;
+  font-size: 1.1rem;
+}

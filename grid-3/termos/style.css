@@ -1,0 +1,151 @@
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header img {
+  margin-left: 40px;
+}
+.menu {
+  padding: 10px;
+  display: flex;
+  font-size: 1.2rem;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.menu a:hover {
+  color: #000000;
+  background: rgb(255, 255, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h4 {
+  font-size: 3.5rem;
+  /* margin-left: 30px; */
+}
+
+.seguros {
+  background: #121212;
+  /* height: 600px; */
+  padding-left: 40px;
+}
+
+.seguros h4 {
+  color: white;
+}
+
+.bt {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background: #2e2e2e;
+  font-weight: bold;
+}
+.bt:hover {
+  background: #272323;
+}
+.btnn {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  margin-left: 10px;
+  background: #ffbb00;
+  font-weight: bold;
+}
+.btnn:hover {
+  background: #c79200;
+}
+.footer {
+  background: #000;
+  color: white;
+  margin: 0px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+  gap: 20px;
+}
+
+.footer h6 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.footer p,
+h3 {
+  color: #838080;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* justify-content: center; */
+  /* background: #9900ff; */
+}
+
+.flex1 img:hover {
+  background: #3a0061;
+  padding: 3px;
+  border-radius: 10px;
+}
+.hr {
+  border: 2px solid rgb(75, 5, 180);
+}
+@media (max-width: 800px) {
+  .hr {
+    display: none;
+  }
+  .flex1 {
+    justify-content: start;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer img {
+    grid-column: 1/-1;
+    /* background-color: #3a0061; */
+  }
+}
+.titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.subtitulo {
+  font-family: "Roboto", sans-serif;
+}
+.politica {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+.politica h2 {
+  margin-bottom: 10px;
+  /* margin-top: 20px; */
+  font-family: poppins;
+}
+.politica p {
+  max-width: 60ch;
+  margin-bottom: 20px;
+  font-family: roboto;
+}
