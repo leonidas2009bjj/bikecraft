@@ -1,44 +1,6 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-img {
-  max-width: 100%;
-  display: block;
-}
-header {
-  background: #000;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-header img {
-  margin-left: 40px;
-}
-body {
-  background: rgb(231, 230, 231);
-}
-.menu {
-  padding: 10px;
-  display: flex;
-  font-size: 1.2rem;
-  gap: 20px;
-  padding: 20px;
-  align-items: center;
-}
+@import "./global/global.css";
+@import "./global/header.css";
 
-.menu a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-}
-.menu a:hover {
-  color: #000000;
-  background: rgb(255, 255, 0);
-  padding: 10px;
-  border-radius: 10px;
-}
 .bikes {
   background: #121212;
   color: white;
@@ -228,34 +190,7 @@ input:hover {
 .ponto {
   color: #ffee00;
 }
-.footer {
-  background: #000;
-  color: white;
-  margin: 0px;
-  padding: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* align-items: center; */
-  gap: 20px;
-}
 
-.footer h6 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-.footer p,
-h3 {
-  color: #838080;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-.footer {
-  grid-template-columns: 1fr 1fr;
-}
-.footer img {
-  grid-column: 1/-1;
-  /* background-color: #3a0061; */
-}
 .flex1 {
   display: flex;
   gap: 20px;
